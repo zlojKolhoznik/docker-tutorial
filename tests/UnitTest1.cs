@@ -29,5 +29,10 @@ namespace myWebApp.Tests
             Assert.Equal(firstMidName, student.FirstMidName);
             Assert.Equal(enrollmentDate, student.EnrollmentDate);
         }
+
+        [Fact]
+        public void Fails_Always() {
+            Assert.True(false);
+        }
     }
 }
